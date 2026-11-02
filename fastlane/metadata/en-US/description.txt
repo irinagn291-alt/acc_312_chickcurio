@@ -1,0 +1,13 @@
+ChickCurio is a personal food diary for testing one suspect food at a time. Mark each day clean or flare until that food clears or busts.
+
+• Test one food at a time on the day board (One suspect)
+• Pick a food by typing a name, choosing a shelf chip, or scanning a barcode
+• Mark today Clean or Flare; seven clean days clear it, a flare busts it
+• Rotate off a busted food, then pick the next one
+• Log food on the open day with no calorie count
+• Tag place on a flare as Head, Gut, Skin, or Joints
+• Read the ledger for Failed foods, Cleared foods, and Rotated off
+• Export ledger as a shareable text summary
+• Settings keeps marks on this device, with Replay intro, Cited notes, Contact, and Erase diary
+
+A flare note is a personal log, not a diagnosis. Open Cited notes for NHS food intolerance and MedlinePlus food allergy links.

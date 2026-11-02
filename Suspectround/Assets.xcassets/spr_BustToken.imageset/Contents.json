@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "filename": "spr_BustToken.png",
+      "idiom": "universal"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

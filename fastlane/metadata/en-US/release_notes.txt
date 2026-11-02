@@ -1,0 +1,1 @@
+Initial release. Test one food at a time, mark each day clean or flare, clear after seven clean days or bust and rotate off. Includes Food log without calories, Places tags on flares, Ledger with Export ledger, optional barcode naming, and Settings with Cited notes and Contact.

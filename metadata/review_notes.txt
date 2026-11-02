@@ -1,0 +1,17 @@
+Camera access appears when you open Food name or Food log and choose to scan. The screen shows Scan a code to name the food. Tap Continue to bring up the system camera prompt. The usage description is: ChickCurio scans barcodes to name the active suspect and meal intakes without logging calories. If camera access is denied or restricted, the screen offers Open Settings. No other permissions are requested.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+ChickCurio is a personal elimination diary for people testing one suspect food. Mark each day clean or flare until the food clears or busts, then rotate off and continue with the next food.
+
+From a cold launch, walk through onboarding: Test one food at a time., Mark the open day., and Seven clean days clear it., using Skip, Continue, or Start. The empty board shows The board is empty; tap Pick a food. On Food name, type a Food name, use a shelf chip such as Oat milk, or scan a code, then tap Save food. On the day board, tap Clean or Flare for today. Tap Log food to name something eaten on the open day, Tag place after a flare to choose Head, Gut, Skin, or Joints, and Read the ledger for Failed foods, Cleared foods, and Rotated off. The gear opens Settings. No credentials or demo account are needed.
+
+Marks stay on this device. Settings Contact opens the support page; Cited notes open the linked health references. Naming or scanning a food may look up a product name when the device is online.
+
+Behaviour does not differ by region.
+
+No licence or regulated-industry paperwork applies; this is a personal food diary, not a medical device or clinical tool.
+
+Health citations are on Sources, reached from Settings via Cited notes: tappable NHS food intolerance and MedlinePlus food allergy links. The app states a flare note is a personal log, not a diagnosis, and gives no treatment recommendations.
+
+A scannable QR is attached (qr-code.png). It encodes 3013710000201. On Simulator, type those digits in the Food name field.
