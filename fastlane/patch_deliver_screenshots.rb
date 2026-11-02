@@ -20,7 +20,25 @@ end
 # Apple has not published sourceFileChecksum yet. Official fix is merged to
 # master, not released. Same wait + delete-before-retry as PR 30150.
 
+require "timeout"
+
+# Spaceship otherwise waits up to 20 minutes for each failed reservation,
+# before deliver's own processing timeout even starts.
+ENV["SPACESHIP_SCREENSHOT_UPLOAD_TIMEOUT"] ||= "2"
+
 module GFDeliverScreenshotFix
+  def upload(options, screenshots)
+    # Bound the whole screenshot phase, including queue workers, Apple 500s,
+    # processing and retries. The per-processing timeout alone cannot do that.
+    Timeout.timeout(15 * 60) { super }
+  rescue Timeout::Error
+    FastlaneCore::UI.user_error!("App Store screenshot upload timed out after 15 minutes. Apple may still be processing uploaded files. Retry Upload listing when Apple responds.")
+  end
+
+  def upload_screenshots(localizations, screenshots_per_language, timeout_seconds, tries: 2)
+    super(localizations, screenshots_per_language, timeout_seconds, tries: [tries, 2].min)
+  end
+
   def wait_for_complete(iterator, timeout_seconds)
     start_time = Time.now
     loop do
